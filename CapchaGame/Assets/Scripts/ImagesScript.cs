@@ -10,6 +10,26 @@ public class ImagesScript : MonoBehaviour
 
     public List<Sprite> ImageList;
     public bool[] RighImageSequence = new bool[9];
-    //public Text imageHint;
+    public int corretImageNumber = 0;
+
+    void Awake()
+    {
+        calculateCorretImageNumber();
+    }
+
+
+    public void calculateCorretImageNumber()
+    {
+        for (int i = 0; i <RighImageSequence.Length; i++)
+        {
+            if (RighImageSequence[i])
+            {
+                corretImageNumber++;
+            }
+            
+        }
+    }
+
+
    
 }

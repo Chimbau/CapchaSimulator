@@ -5,14 +5,18 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float MaxTime;
+    public float BaseMaxTime;
+    public float timePerImage;
     private Image TimeBar;
-    private float Timeleft;
+    public float Timeleft;
+
+    public GameManager gameManager;
+
     
 
     void Start()
     {
-        Timeleft = MaxTime;
+        //Timeleft = BaseMaxTime;
         TimeBar = GetComponent<Image>();
         
     }
@@ -20,6 +24,13 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+
+        /*if(gameManager.currentImagemIndex != -1 && !started)
+        {
+            Timeleft = gameManager.GetMaxTime();
+            started = true;
+        }*/
+
         TimerStuff();
 
     }
@@ -29,14 +40,21 @@ public class Timer : MonoBehaviour
 
         if (Timeleft >= 0)
         {
-            Timeleft -= Time.deltaTime;
-            TimeBar.fillAmount = Timeleft / MaxTime;
+            if (!gameManager.hasScoreTimeStarted)
+            {
+                Timeleft -= Time.deltaTime;
+                TimeBar.fillAmount = Timeleft / gameManager.GetMaxTime();
+            }
+           
         }
         else
         {
-
+            gameManager.ButtonNextClicked();
+            Timeleft = gameManager.GetMaxTime();
         }
         
             
     }
+
+    
 }

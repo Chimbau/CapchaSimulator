@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 public class GameManager : MonoBehaviour
 {
     public List<ImagesScript> imageList;
+    public List<ImagesScript> imageListBackup;
     public List<GameObject> ButtonList9;
     public List<GameObject> ButtonList16;
 
@@ -20,10 +21,37 @@ public class GameManager : MonoBehaviour
     public bool[] selectedImages = new bool[16];
 
     public TextMeshProUGUI hintText;
+    public TextMeshProUGUI scoreText;
 
+    public Timer timer;
+    private float maxTime;
+
+    public float pefectMultiplierValue;
+
+    private static int score = 0;
+
+    public float TimeBetweenImages = 3f;
+    private float timeScoreLeft;
+    public bool hasScoreTimeStarted = false;
+
+
+
+    void Update()
+    {
+        if (hasScoreTimeStarted)
+        {
+            StartScoreTime();
+        }
+        //Debug.Log(CalculateTimerMultiplier());
+
+    }
 
     void Start()
     {
+        timeScoreLeft = TimeBetweenImages;
+        imageListBackup = imageList;
+
+
         for (int i = 0; i < selectedImages.Length; i++)
         {
             selectedImages[i] = false;
@@ -37,28 +65,46 @@ public class GameManager : MonoBehaviour
     public void ButtonNextClicked()
     {
 
+        float addScore = 0f;
+        float perfectMultuplier = pefectMultiplierValue;
+
         if (currentImagemIndex < imageList.Count)
         {
-            bool CheckSequence = true;
             for (int i = 0; i < imageList[currentImagemIndex].RighImageSequence.Length; i++)
             {
+                if (selectedImages[i] == true && selectedImages[i] == imageList[currentImagemIndex].RighImageSequence[i])
+                {
+                    addScore += 100f / imageList[currentImagemIndex].corretImageNumber;
+                }
+
                 if (selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
                 {
-                    CheckSequence = false;
-                    break;
+                    perfectMultuplier = 1f;
                 }
             }
 
-            if (CheckSequence)
+
+
+            if (addScore > 99f)
             {
-                NextImage();
-                CheckSequence = false;
+                addScore = 100f;
             }
-            else
+
+
+            int TimerMultiplier = CalculateTimerMultiplier();
+            if (TimerMultiplier < 1)
             {
-                ResetSelectedImages();
-                CheckSequence = false;
+                TimerMultiplier = 1;
             }
+
+            addScore = addScore * TimerMultiplier * perfectMultuplier;
+            score += (int)addScore;
+           
+            imageList.RemoveAt(currentImagemIndex);
+            UpdateScore();
+            //NextImage();
+            hasScoreTimeStarted = true;
+          
         }     
     }
 
@@ -66,9 +112,16 @@ public class GameManager : MonoBehaviour
     public void NextImage()
     {
       
-        ResetSelectedImages();   
-        currentImagemIndex++;
-       
+        ResetSelectedImages();
+
+        int imageCount = imageList.Count;
+        
+        currentImagemIndex = Random.Range(0, imageCount);
+        
+
+
+        //currentImagemIndex++;
+
         if (currentImagemIndex < imageList.Count)
         {
             hintText.text = imageList[currentImagemIndex].GetComponent<Text>().text;
@@ -93,7 +146,14 @@ public class GameManager : MonoBehaviour
 
                 }
             }
-           
+
+            SetMaxTime(currentImagemIndex);
+
+            timer.Timeleft = maxTime;
+
+            
+         
+
         }       
     }
 
@@ -167,74 +227,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    /*
-    public void Button1Clicked()
-    {
-        int buttonIndex = 0;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-       
-        
-    }
-    public void Button2Clicked()
-    {
-
-        int buttonIndex = 1;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button3Clicked()
-    {
-        int buttonIndex = 2;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button4Clicked()
-    {
-        int buttonIndex = 3;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button5Clicked()
-    {
-        int buttonIndex = 4;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button6Clicked()
-    {
-        int buttonIndex = 5;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button7Clicked()
-    {
-        int buttonIndex = 6;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button8Clicked()
-    {
-        int buttonIndex = 7;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    public void Button9Clicked()
-    {
-        int buttonIndex = 8;
-        selectedImages[buttonIndex] = !selectedImages[buttonIndex];
-        changeButtonColor(buttonIndex);
-    }
-
-    */
-
 
     public void changeButtonColor(int aux)
     {
@@ -268,8 +260,49 @@ public class GameManager : MonoBehaviour
        
       
     }
+
+    
+    public void UpdateScore()
+    {
+        scoreText.text = score.ToString();
+    }
     
 
+    public void SetMaxTime(int imageIndex)
+    {
+       // Debug.Log(imageList[imageIndex].corretImageNumber);
+       maxTime =  timer.BaseMaxTime + timer.timePerImage * imageList[imageIndex].corretImageNumber;
+              
+    }
+
+    public float GetMaxTime()
+    {
+        return maxTime;
+    }
+
+    public int CalculateTimerMultiplier()
+    {
+        return  (int) ((timer.Timeleft / maxTime) *  10);
+    }
+
+
+    public void StartScoreTime()
+    {
+    
+        
+        
+        if (timeScoreLeft >= 0)
+        {
+            timeScoreLeft -= Time.deltaTime;
+        }
+        else
+        {
+            hasScoreTimeStarted = false;
+            timeScoreLeft = TimeBetweenImages;
+            NextImage();
+        }
+       
+    }
 
 
 }
