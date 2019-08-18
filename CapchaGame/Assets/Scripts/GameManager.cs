@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject Panel9;
     public GameObject Panel16;
+    public GameObject GameOverPanel;
+    public GameObject TimerBar;
+    public GameObject HintPanel;
     
     public int currentImagemIndex = -1;
 
@@ -28,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     public float pefectMultiplierValue;
 
-    private static int score = 0;
+    private int score = 0;
     private float addScore = 0f;
     private float perfectMultuplier;
     private int RightImageCout = 0;
@@ -38,6 +42,8 @@ public class GameManager : MonoBehaviour
     private int TotalScore;
 
     public float TimeBetweenImages = 3f;
+    public int ImageNumberToShow = 10;
+    private int currentImageShowing = 1;
     private float timeScoreLeft;
     public bool hasScoreTimeStarted = false;
     public GameObject ScoreOfImage;
@@ -48,7 +54,9 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI TimeLeftMultiplier;
     public TextMeshProUGUI PerfectRoundMulti;
     public TextMeshProUGUI TotalRoundScore;
+    public TextMeshProUGUI GameOverScore;
 
+    public PlayerHealth playerHealth;
 
 
 
@@ -58,7 +66,9 @@ public class GameManager : MonoBehaviour
         {
             StartScoreTime();
         }
-        //Debug.Log(CalculateTimerMultiplier());
+
+       
+       
 
     }
 
@@ -73,15 +83,15 @@ public class GameManager : MonoBehaviour
             selectedImages[i] = false;
         }
         NextImage();
-        //hintText.text = imageList[currentImagemIndex].GetComponent<Text>().text;
 
     }
 
 
     public void ButtonNextClicked()
     {
-        if (!hasScoreTimeStarted)
+        if (!hasScoreTimeStarted && currentImageShowing < ImageNumberToShow)
         {
+            currentImageShowing++;
             addScore = 0f;
             RightImageCout = 0;
             WrongImageCout = 0;
@@ -336,7 +346,16 @@ public class GameManager : MonoBehaviour
             hasScoreTimeStarted = false;
             timeScoreLeft = TimeBetweenImages;
             imageList.RemoveAt(currentImagemIndex);
-            NextImage();
+
+            if (currentImageShowing == ImageNumberToShow || playerHealth.Health == 0)
+            {
+                ShowGameOverPanel();
+            }
+            else
+            {
+                NextImage();
+            }
+           
         }
        
     }
@@ -366,6 +385,25 @@ public class GameManager : MonoBehaviour
         TimeLeftMultiplier.SetText("");
         PerfectRoundMulti.SetText("");
         TotalRoundScore.SetText("");
+    }
+
+
+    public void ShowGameOverPanel()
+    {
+        if (currentImageShowing == ImageNumberToShow)
+        {
+            Panel16.SetActive(false);
+            Panel9.SetActive(false);
+            TimerBar.SetActive(false);
+            HintPanel.SetActive(false);
+            GameOverScore.SetText(score.ToString());
+            GameOverPanel.SetActive(true);
+        }
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
