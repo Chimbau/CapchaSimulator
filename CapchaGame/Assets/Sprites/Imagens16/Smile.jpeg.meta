@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: a3fc34c020629fc47b52c1c1c12fa7e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7801881510924318990
+    second: Smile_0
+  - first:
+      213: 8041952789160661416
+    second: Smile_1
+  - first:
+      213: 3063417140356329161
+    second: Smile_2
+  - first:
+      213: -4230020580648658819
+    second: Smile_3
+  - first:
+      213: 7325468859994577652
+    second: Smile_4
+  - first:
+      213: 3637309109378054018
+    second: Smile_5
+  - first:
+      213: 622879256508330139
+    second: Smile_6
+  - first:
+      213: -3929452759883750187
+    second: Smile_7
+  - first:
+      213: 2910998148983371554
+    second: Smile_8
+  - first:
+      213: 1290806211359781078
+    second: Smile_9
+  - first:
+      213: -8314615417717057208
+    second: Smile_10
+  - first:
+      213: 319377901027636048
+    second: Smile_11
+  - first:
+      213: 597619210366005300
+    second: Smile_12
+  - first:
+      213: -3408849433520808597
+    second: Smile_13
+  - first:
+      213: -904654106243617980
+    second: Smile_14
+  - first:
+      213: 6916340761612845956
+    second: Smile_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Smile_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a05931b42df79947a8ed7871164bff4
+      internalID: 7801881510924318990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04462d3c61488824eb4cb50d98f95e05
+      internalID: 8041952789160661416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8212e27ad35f6e94b822145c45f247b0
+      internalID: 3063417140356329161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_3
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fc322705f850c4c955811cb51f4c30
+      internalID: -4230020580648658819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8800674f26393c4b8fa096f5d9d8b40
+      internalID: 7325468859994577652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0f693e8e8743b41bd14eebc172df44
+      internalID: 3637309109378054018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_6
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080dc13f3df1ce448b9d81d88f2d1d17
+      internalID: 622879256508330139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_7
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1f5500917cde846b57f62c2588c3b5
+      internalID: -3929452759883750187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bc137caf719884ea3d204199655a34
+      internalID: 2910998148983371554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0316bf981fde74797dcc8510033a4a
+      internalID: 1290806211359781078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e2d140c04724a4ebbdb5a61832f599
+      internalID: -8314615417717057208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_11
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae7126694636b74e9d626ba57c6d761
+      internalID: 319377901027636048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900de98040ef10a479d76fb89e7380c9
+      internalID: 597619210366005300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb198a0e8bdb50e41b7373ea910cd45b
+      internalID: -3408849433520808597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_14
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b15967e392a774aa28e0741b7b8c68
+      internalID: -904654106243617980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Smile_15
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb65f43146d62b468cc0fbc93999461
+      internalID: 6916340761612845956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

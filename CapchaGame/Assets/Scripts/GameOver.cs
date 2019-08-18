@@ -29,8 +29,9 @@ public class GameOver : MonoBehaviour
       SceneManager.LoadScene(2);
     }
 
-    public void Defeat(){
+    public void Defeat(int totalpoints){
       win = 0;
+      points = totalpoints;
       SceneManager.LoadScene(2);
     }
 

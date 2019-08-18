@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     public float pefectMultiplierValue;
 
-    private static int score = 0;
+    public static int score = 0;
     private float addScore = 0f;
     private float perfectMultuplier;
     private int RightImageCout = 0;
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     private int TotalScore;
 
     private int currentImageShowing = 0;
-    public int ImageNumberToShow = 2;
+    public int ImageNumberToShow = 8;
     public float TimeBetweenImages = 3f;
     private float timeScoreLeft;
     public bool hasScoreTimeStarted = false;

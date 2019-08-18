@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: 9fbc22d7003c2994f8991c2315d478ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7488755383076348022
+    second: Watching_0
+  - first:
+      213: 8615895472573288628
+    second: Watching_1
+  - first:
+      213: -2308683442298033294
+    second: Watching_2
+  - first:
+      213: -7682365042852896810
+    second: Watching_3
+  - first:
+      213: 2287315121870826667
+    second: Watching_4
+  - first:
+      213: -2720071635157095267
+    second: Watching_5
+  - first:
+      213: 4046317053669582133
+    second: Watching_6
+  - first:
+      213: 7588605580685007784
+    second: Watching_7
+  - first:
+      213: 1316061683537893072
+    second: Watching_8
+  - first:
+      213: 3481827183117682995
+    second: Watching_9
+  - first:
+      213: 7203002059501514064
+    second: Watching_10
+  - first:
+      213: 1997187715490748141
+    second: Watching_11
+  - first:
+      213: 2846419614918919270
+    second: Watching_12
+  - first:
+      213: -3780965304562103910
+    second: Watching_13
+  - first:
+      213: -2177337396915197674
+    second: Watching_14
+  - first:
+      213: 7938521933205497022
+    second: Watching_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Watching_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 865.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14cc2e2278a59b439a5f8092a0d5af0
+      internalID: -7488755383076348022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 865.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a65a17c625e9ad4b8fc4fcb197eb2b7
+      internalID: 8615895472573288628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 865.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4577dcf07b3e25e4d9ad0b28d8cc63c0
+      internalID: -2308683442298033294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_3
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 865.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c8c180272a93a4fa83e713ad8c35aa
+      internalID: -7682365042852896810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 577.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf4fb590de378f49bc90a6972c53fec
+      internalID: 2287315121870826667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 577.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508d4f20b886d04489dc030cec4435ed
+      internalID: -2720071635157095267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_6
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 577.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a177e264752dd4ea372872e7b66bba
+      internalID: 4046317053669582133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_7
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 577.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4e476180255764aa35d50aa032f046
+      internalID: 7588605580685007784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 289.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb725735baa85c44a917f9b997d29893
+      internalID: 1316061683537893072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 289.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e137b07f3caa94cb8f4bec5506a240
+      internalID: 3481827183117682995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 289.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9df243ee862fa4ca5bc69923e37b16
+      internalID: 7203002059501514064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_11
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 289.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db57cd3123462dc41a18a37c92ea3e26
+      internalID: 1997187715490748141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2907c525defba104da70e58357f208d5
+      internalID: 2846419614918919270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd0fe2ba87e9654580efca5bed1e5e2
+      internalID: -3780965304562103910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_14
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4202b3cbff6170a4b95f996fd56edd62
+      internalID: -2177337396915197674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Watching_15
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1.5
+        width: 470
+        height: 288.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b9c5f34074b8e4e8f3ac8871d3bf62
+      internalID: 7938521933205497022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

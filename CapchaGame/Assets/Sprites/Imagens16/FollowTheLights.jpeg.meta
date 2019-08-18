@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: 78f3fd60413792b4991ad47a8153bbe2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5135088003400849459
+    second: FollowTheLights_0
+  - first:
+      213: 6659786447787841604
+    second: FollowTheLights_1
+  - first:
+      213: -5581998890118306154
+    second: FollowTheLights_2
+  - first:
+      213: 1636681852244456464
+    second: FollowTheLights_3
+  - first:
+      213: 8878206006957114851
+    second: FollowTheLights_4
+  - first:
+      213: -3471785504370418987
+    second: FollowTheLights_5
+  - first:
+      213: 3361306533521643646
+    second: FollowTheLights_6
+  - first:
+      213: 5986817320091689373
+    second: FollowTheLights_7
+  - first:
+      213: 3182304483997052238
+    second: FollowTheLights_8
+  - first:
+      213: -3821614409979345607
+    second: FollowTheLights_9
+  - first:
+      213: 3848942581658975274
+    second: FollowTheLights_10
+  - first:
+      213: 15015374906060777
+    second: FollowTheLights_11
+  - first:
+      213: 5324384040572597551
+    second: FollowTheLights_12
+  - first:
+      213: -3965080764553307085
+    second: FollowTheLights_13
+  - first:
+      213: 4591984070865103468
+    second: FollowTheLights_14
+  - first:
+      213: -5228728965583299109
+    second: FollowTheLights_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FollowTheLights_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4374059a05ba83547a69fc1a571efc3e
+      internalID: -5135088003400849459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_1
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879587561bc78f34d9cf8a06ec4664e1
+      internalID: 6659786447787841604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9604a6ba4f8dc28409b7d34122128c27
+      internalID: -5581998890118306154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_3
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 939.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76176594fd40a6744bb34aaec08a6448
+      internalID: 1636681852244456464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd096e46aa758944b67c86a5b7921e4
+      internalID: 8878206006957114851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd018061a50f24b48b0f7399f883403d
+      internalID: -3471785504370418987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_6
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac35ee879efa2be47a4a4460e820ccd8
+      internalID: 3361306533521643646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_7
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 626.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0143d72d152531b4398d40c1761bf440
+      internalID: 5986817320091689373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141c47f5e6e2d2b4e8679df1ab8c6a97
+      internalID: 3182304483997052238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1e955cba4361740b911d3d758cc0f5
+      internalID: -3821614409979345607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_10
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb765f5e40d936499207e336daa92e8
+      internalID: 3848942581658975274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_11
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 313.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15fe1d84467bde4fb79524813e829b2
+      internalID: 15015374906060777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb40cfcbfdc7e0940aaf839757dc2044
+      internalID: 5324384040572597551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b638cd9f49e574fbf4e221e5005f75
+      internalID: -3965080764553307085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_14
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a65806eb7b64246a8a06282e9c7166
+      internalID: 4591984070865103468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FollowTheLights_15
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 0.75
+        width: 470
+        height: 313.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760d3549cd1d0974581b0369570c9642
+      internalID: -5228728965583299109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

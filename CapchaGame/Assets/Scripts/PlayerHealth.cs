@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int Health;
     public GameObject[] HealthPanels;
     public GameObject GameOver;
+    public GameObject manager;
 
     public void LoseHealth()
     {
@@ -17,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
         }
         HealthPanels[Health].SetActive(false);
         if(Health == 0){
-          GameOver.GetComponent<GameOver>().Defeat();
+          GameOver.GetComponent<GameOver>().Defeat(GameManager.score);
         }
     }
 
