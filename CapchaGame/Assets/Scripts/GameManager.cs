@@ -29,10 +29,26 @@ public class GameManager : MonoBehaviour
     public float pefectMultiplierValue;
 
     private static int score = 0;
+    private float addScore = 0f;
+    private float perfectMultuplier;
+    private int RightImageCout = 0;
+    private int WrongImageCout = 0;
+    private int RawScore;
+    private int TimerMultiplier;
+    private int TotalScore;
 
     public float TimeBetweenImages = 3f;
     private float timeScoreLeft;
     public bool hasScoreTimeStarted = false;
+    public GameObject ScoreOfImage;
+
+    public TextMeshProUGUI RightImages;
+    public TextMeshProUGUI WrongImages;
+    public TextMeshProUGUI RawScoreText;
+    public TextMeshProUGUI TimeLeftMultiplier;
+    public TextMeshProUGUI PerfectRoundMulti;
+    public TextMeshProUGUI TotalRoundScore;
+
 
 
 
@@ -65,8 +81,10 @@ public class GameManager : MonoBehaviour
     public void ButtonNextClicked()
     {
 
-        float addScore = 0f;
-        float perfectMultuplier = pefectMultiplierValue;
+        addScore = 0f;
+        RightImageCout = 0;
+        WrongImageCout = 0;
+        perfectMultuplier = pefectMultiplierValue;
 
         if (currentImagemIndex < imageList.Count)
         {
@@ -75,6 +93,12 @@ public class GameManager : MonoBehaviour
                 if (selectedImages[i] == true && selectedImages[i] == imageList[currentImagemIndex].RighImageSequence[i])
                 {
                     addScore += 100f / imageList[currentImagemIndex].corretImageNumber;
+                    RightImageCout++;
+                }
+                else if (selectedImages[i] == true && selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
+                {
+                    WrongImageCout++;
+                    addScore -= 100f / imageList[currentImagemIndex].corretImageNumber;
                 }
 
                 if (selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
@@ -89,21 +113,30 @@ public class GameManager : MonoBehaviour
             {
                 addScore = 100f;
             }
+            else if (addScore <= 0f)
+            {
+                addScore = 0f;
+            }
+
+            RawScore = (int) addScore;
 
 
-            int TimerMultiplier = CalculateTimerMultiplier();
+            TimerMultiplier = CalculateTimerMultiplier();
             if (TimerMultiplier < 1)
             {
                 TimerMultiplier = 1;
             }
 
-            addScore = addScore * TimerMultiplier * perfectMultuplier;
-            score += (int)addScore;
+            addScore = (int) addScore * TimerMultiplier * perfectMultuplier;
+            TotalScore = (int)addScore;
+            //SetScore();
+            
+            
            
-            imageList.RemoveAt(currentImagemIndex);
+            score += (int)addScore;
             UpdateScore();
-            //NextImage();
             hasScoreTimeStarted = true;
+            StartCoroutine(SetScore());
           
         }     
     }
@@ -113,6 +146,8 @@ public class GameManager : MonoBehaviour
     {
       
         ResetSelectedImages();
+        ResetScoreImage();
+
 
         int imageCount = imageList.Count;
         
@@ -288,20 +323,47 @@ public class GameManager : MonoBehaviour
 
     public void StartScoreTime()
     {
-    
-        
-        
+        ScoreOfImage.SetActive(true);    
         if (timeScoreLeft >= 0)
         {
             timeScoreLeft -= Time.deltaTime;
         }
         else
         {
+            ScoreOfImage.SetActive(false);
             hasScoreTimeStarted = false;
             timeScoreLeft = TimeBetweenImages;
+            imageList.RemoveAt(currentImagemIndex);
             NextImage();
         }
        
+    }
+
+    IEnumerator SetScore()
+    {
+        yield return new WaitForSeconds(0.5f);
+        RightImages.SetText(RightImageCout.ToString() + "/" + imageList[currentImagemIndex].corretImageNumber);
+        yield return new WaitForSeconds(0.5f);
+        WrongImages.SetText(WrongImageCout.ToString());
+        yield return new WaitForSeconds(0.5f);
+        RawScoreText.SetText(RawScore.ToString());
+        yield return new WaitForSeconds(0.5f);
+        TimeLeftMultiplier.SetText("x" + TimerMultiplier.ToString());
+        yield return new WaitForSeconds(0.5f);
+        PerfectRoundMulti.SetText("x" + perfectMultuplier.ToString());
+        yield return new WaitForSeconds(0.5f);
+        TotalRoundScore.SetText(TotalScore.ToString());
+
+    }
+
+    public void ResetScoreImage()
+    {
+        RightImages.SetText("");
+        WrongImages.SetText("");
+        RawScoreText.SetText("");
+        TimeLeftMultiplier.SetText("");
+        PerfectRoundMulti.SetText("");
+        TotalRoundScore.SetText("");
     }
 
 

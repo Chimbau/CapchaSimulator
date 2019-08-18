@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     public float Timeleft;
 
     public GameManager gameManager;
+    public PlayerHealth health;
 
     
 
@@ -49,6 +50,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            health.LoseHealth();
             gameManager.ButtonNextClicked();
             Timeleft = gameManager.GetMaxTime();
         }

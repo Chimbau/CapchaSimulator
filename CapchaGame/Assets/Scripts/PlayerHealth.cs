@@ -6,6 +6,8 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public int Health;
+    public GameObject[] HealthPanels;
+
    
     public void LoseHealth()
     {
@@ -13,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Health--;
         }
+        HealthPanels[Health].SetActive(false);
         
     }
     
