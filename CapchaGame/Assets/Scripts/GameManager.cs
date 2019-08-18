@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -15,7 +16,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject Panel9;
     public GameObject Panel16;
-    
+
+    public GameObject GameOver;
+
     public int currentImagemIndex = -1;
 
     public bool[] selectedImages = new bool[16];
@@ -146,15 +149,15 @@ public class GameManager : MonoBehaviour
 
     public void NextImage()
     {
-      
+
         ResetSelectedImages();
         ResetScoreImage();
 
 
         int imageCount = imageList.Count;
-        
+
         currentImagemIndex = Random.Range(0, imageCount);
-        
+
 
 
         //currentImagemIndex++;
@@ -176,7 +179,7 @@ public class GameManager : MonoBehaviour
             {
                 Panel9.SetActive(false);
                 Panel16.SetActive(true);
-                
+
                 for (int i = 0; i < 16; i++)
                 {
                     ButtonList16[i].GetComponent<Image>().sprite = imageList[currentImagemIndex].ImageList[i];
@@ -188,10 +191,10 @@ public class GameManager : MonoBehaviour
 
             timer.Timeleft = maxTime;
 
-            
-         
 
-        }       
+
+
+        }
     }
 
 
@@ -211,7 +214,7 @@ public class GameManager : MonoBehaviour
         switch (EventSystem.current.currentSelectedGameObject.name)
         {
             case "Button":
-                buttonIndex = 0;           
+                buttonIndex = 0;
                 break;
             case "Button (1)":
                 buttonIndex = 1;
@@ -294,22 +297,22 @@ public class GameManager : MonoBehaviour
             }
         }
 
-       
-      
+
+
     }
 
-    
+
     public void UpdateScore()
     {
         scoreText.text = score.ToString();
     }
-    
+
 
     public void SetMaxTime(int imageIndex)
     {
        // Debug.Log(imageList[imageIndex].corretImageNumber);
        maxTime =  timer.BaseMaxTime + timer.timePerImage * imageList[imageIndex].corretImageNumber;
-              
+
     }
 
     public float GetMaxTime()
@@ -325,7 +328,7 @@ public class GameManager : MonoBehaviour
 
     public void StartScoreTime()
     {
-        ScoreOfImage.SetActive(true);    
+        ScoreOfImage.SetActive(true);
         if (timeScoreLeft >= 0)
         {
             timeScoreLeft -= Time.deltaTime;
@@ -336,9 +339,11 @@ public class GameManager : MonoBehaviour
             hasScoreTimeStarted = false;
             timeScoreLeft = TimeBetweenImages;
             imageList.RemoveAt(currentImagemIndex);
+            if(imageList.Count == 0)
+              GameOver.GetComponent<GameOver>().EndGame(score);
             NextImage();
         }
-       
+
     }
 
     IEnumerator SetScore()
@@ -367,6 +372,5 @@ public class GameManager : MonoBehaviour
         PerfectRoundMulti.SetText("");
         TotalRoundScore.SetText("");
     }
-
 
 }
