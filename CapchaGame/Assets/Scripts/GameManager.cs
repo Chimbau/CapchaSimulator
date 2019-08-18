@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     private int TimerMultiplier;
     private int TotalScore;
 
+    private int currentImageShowing = 0;
+    public int ImageNumberToShow = 2;
     public float TimeBetweenImages = 3f;
     private float timeScoreLeft;
     public bool hasScoreTimeStarted = false;
@@ -67,6 +69,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        score = 0;
         timeScoreLeft = TimeBetweenImages;
         imageListBackup = imageList;
 
@@ -83,8 +86,9 @@ public class GameManager : MonoBehaviour
 
     public void ButtonNextClicked()
     {
-        if (!hasScoreTimeStarted)
+        if (!hasScoreTimeStarted && currentImageShowing < ImageNumberToShow)
         {
+            currentImageShowing++;
             addScore = 0f;
             RightImageCout = 0;
             WrongImageCout = 0;
@@ -339,7 +343,7 @@ public class GameManager : MonoBehaviour
             hasScoreTimeStarted = false;
             timeScoreLeft = TimeBetweenImages;
             imageList.RemoveAt(currentImagemIndex);
-            if(imageList.Count == 0)
+            if(currentImageShowing == ImageNumberToShow)
               GameOver.GetComponent<GameOver>().EndGame(score);
             NextImage();
         }
