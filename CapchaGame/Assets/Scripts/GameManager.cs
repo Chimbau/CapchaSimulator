@@ -80,65 +80,67 @@ public class GameManager : MonoBehaviour
 
     public void ButtonNextClicked()
     {
-
-        addScore = 0f;
-        RightImageCout = 0;
-        WrongImageCout = 0;
-        perfectMultuplier = pefectMultiplierValue;
-
-        if (currentImagemIndex < imageList.Count)
+        if (!hasScoreTimeStarted)
         {
-            for (int i = 0; i < imageList[currentImagemIndex].RighImageSequence.Length; i++)
+            addScore = 0f;
+            RightImageCout = 0;
+            WrongImageCout = 0;
+            perfectMultuplier = pefectMultiplierValue;
+
+            if (currentImagemIndex < imageList.Count)
             {
-                if (selectedImages[i] == true && selectedImages[i] == imageList[currentImagemIndex].RighImageSequence[i])
+                for (int i = 0; i < imageList[currentImagemIndex].RighImageSequence.Length; i++)
                 {
-                    addScore += 100f / imageList[currentImagemIndex].corretImageNumber;
-                    RightImageCout++;
+                    if (selectedImages[i] == true && selectedImages[i] == imageList[currentImagemIndex].RighImageSequence[i])
+                    {
+                        addScore += 100f / imageList[currentImagemIndex].corretImageNumber;
+                        RightImageCout++;
+                    }
+                    else if (selectedImages[i] == true && selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
+                    {
+                        WrongImageCout++;
+                        addScore -= 100f / imageList[currentImagemIndex].corretImageNumber;
+                    }
+
+                    if (selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
+                    {
+                        perfectMultuplier = 1f;
+                    }
                 }
-                else if (selectedImages[i] == true && selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
+
+
+
+                if (addScore > 99f)
                 {
-                    WrongImageCout++;
-                    addScore -= 100f / imageList[currentImagemIndex].corretImageNumber;
+                    addScore = 100f;
                 }
-
-                if (selectedImages[i] != imageList[currentImagemIndex].RighImageSequence[i])
+                else if (addScore <= 0f)
                 {
-                    perfectMultuplier = 1f;
+                    addScore = 0f;
                 }
+
+                RawScore = (int)addScore;
+
+
+                TimerMultiplier = CalculateTimerMultiplier();
+                if (TimerMultiplier < 1)
+                {
+                    TimerMultiplier = 1;
+                }
+
+                addScore = (int)addScore * TimerMultiplier * perfectMultuplier;
+                TotalScore = (int)addScore;
+                //SetScore();
+
+
+
+                score += (int)addScore;
+                UpdateScore();
+                hasScoreTimeStarted = true;
+                StartCoroutine(SetScore());
+
             }
-
-
-
-            if (addScore > 99f)
-            {
-                addScore = 100f;
-            }
-            else if (addScore <= 0f)
-            {
-                addScore = 0f;
-            }
-
-            RawScore = (int) addScore;
-
-
-            TimerMultiplier = CalculateTimerMultiplier();
-            if (TimerMultiplier < 1)
-            {
-                TimerMultiplier = 1;
-            }
-
-            addScore = (int) addScore * TimerMultiplier * perfectMultuplier;
-            TotalScore = (int)addScore;
-            //SetScore();
-            
-            
-           
-            score += (int)addScore;
-            UpdateScore();
-            hasScoreTimeStarted = true;
-            StartCoroutine(SetScore());
-          
-        }     
+        }
     }
 
 
